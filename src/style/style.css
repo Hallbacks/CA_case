@@ -1,15 +1,26 @@
 :root {
-    --primary-color:#6F0B1D;
-    --primary-variant-color:#A00B27;
+    --primary-color:#0094D6;
+    --primary-variant-color:#0A79AE;
+    --hover-color:#054674;
     --background-color:#E6E6DE;
-    --card-color:#cecbb6;
-    --primary-text:#121212;
+    --primary-text: #4A4A4A;
+}
+
+@font-face {
+  font-family: Nexa;
+  src: url(../font/Nexa_regular.ttf);
 }
 
 * {
     font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    color: var(--primary-text);  
   }
 
   body {
     background-color: var(--background-color);
+  }
+
+  h1, h2 {
+    font-family: Nexa;
+    color: var(--primary-color);
   }
