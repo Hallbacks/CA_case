@@ -1,0 +1,15 @@
+:root {
+    --primary-color:#6F0B1D;
+    --primary-variant-color:#A00B27;
+    --background-color:#E6E6DE;
+    --card-color:#cecbb6;
+    --primary-text:#121212;
+}
+
+* {
+    font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  }
+
+  body {
+    background-color: var(--background-color);
+  }

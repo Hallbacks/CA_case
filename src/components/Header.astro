@@ -1,0 +1,25 @@
+---
+import Nav from "./Nav.astro";
+---
+
+<header>
+    <div class="logo">
+      <a href="/#" class="nav_logo">
+        <img src="/ca_logo.svg" alt="CA Logo" />
+      </a>
+    </div>
+    <Nav />
+  </header>
+  
+<style>
+    
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }  
+
+.logo img {
+    width: 360px;
+    height: auto;
+}
+</style>
