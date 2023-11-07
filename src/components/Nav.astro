@@ -37,15 +37,6 @@
     padding: 0 24px;
   }
 
-  .nav-menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: end;
-    gap: 1.5em;
-    margin-top: 10%;
-  }
-
   .nav_menu {
     display: flex;
     flex-direction: row;
@@ -58,13 +49,13 @@
   .hamburger {
     display: none;
     cursor: pointer;
-    margin-top: 2em;
+    margin-top: 8%;
   }
 
   .bar {
     display: block;
     width: 25px;
-    height: 1px;
+    height: 2px;
     margin: 5px auto;
     transition: all 0.4s ease-in-out;
     background-color: black;
@@ -99,7 +90,7 @@
     }
 
     .hamburger.active .bar:nth-child(1) {
-      translate: 0 7px;
+      translate: 0 8px;
       rotate: 45deg;
     }
 
@@ -108,7 +99,7 @@
     }
 
     .hamburger.active .bar:nth-child(3) {
-      translate: 0 -5px;
+      translate: 0 -6px;
       rotate: -45deg;
     }
 
@@ -116,6 +107,7 @@
       right: 0;
     }
   }
+
 
   
 </style>

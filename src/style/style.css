@@ -1,15 +1,70 @@
 :root {
-    --primary-color:#0094D6;
-    --primary-variant-color:#0A79AE;
+    --primary-color:#044672;
+    --primary-variant-color:#0094D6;
     --hover-color:#044672;
     --background-color:#E6E6DE;
     --secondary-background:#F9F9F7;
+    --tertiary-background: #FFFFFF;
     --primary-text: #4A4A4A;
+    --secondary-text: #FFFFFF;
+    --card-background: #CDC5B6;
+    --border-radius:0.5rem;
+    --xxlg-size:3rem;
+    --xlg-size:2.6rem;
+    --lg-size:1.4rem;
+    --md-size:1.25rem;
+    --sm-size:1.06rem;
+    --xsm-size:0.93rem;
+    --xxsm-size:0.75rem;
 }
+
+@media screen and (max-width: 768px) {
+  :root {
+    --xxlg-size: 2.5rem;
+    --xlg-size:1.6rem;
+    --lg-size: 1.2rem;
+    --md-size: 1.1rem;
+    --sm-size: 1rem;
+    --xsm-size: 0.85rem;
+    --xxsm-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  :root {
+    --xxlg-size: 2rem;
+    --xlg-size:1.6rem;
+    --lg-size: 1rem;
+    --md-size: 0.9rem;
+    --sm-size: 0.8rem;
+    --xsm-size: 0.7rem;
+    --xxsm-size: 0.6rem;
+  }
+}
+
+/* For extremely large screens */
+@media screen and (min-width: 1600px) {
+  :root {
+    --xxlg-size: 4cqw;
+    --xlg-size:2cqw;
+    --lg-size: 1.6cqw;
+    --md-size: 1.4cqw;
+    --sm-size: 1.2cqw;
+    --xsm-size: 1cqw;
+    --xxsm-size: 0.9cqw;
+    --border-radius:0.6rem;
+  }
+}
+
 
 @font-face {
   font-family: Nexa;
   src: url(../font/Nexa_regular.ttf);
+}
+
+@font-face {
+  font-family: Nexa_bold;
+  src: url(../font/Nexa_bold.ttf)
 }
 
 * {
@@ -27,7 +82,19 @@
     padding: 2%;
   }
 
-  h1, h2 {
+  header {
+    background-color: var(--background-color);
+  }
+
+  h1 {
+    font-size: var(--xxlg-size);
+    padding: 2% 0;
+    font-family: Nexa_bold;
+    color: var(--primary-color);
+  }
+
+  h2 {
+    font-size: var(--xlg-size);
     font-family: Nexa;
     color: var(--primary-color);
   }

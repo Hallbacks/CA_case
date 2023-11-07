@@ -5,7 +5,7 @@ import Nav from "./Nav.astro";
 <header>
     <div class="logo">
       <a href="/#" class="nav_logo">
-        <img src="/ca_logo.svg" alt="CA Logo" />
+        <img src="/favicon.svg" alt="CA Logo" />
       </a>
     </div>
     <Nav />
@@ -19,7 +19,14 @@ header {
     }  
 
 .logo img {
-    width: 360px;
+    width: 40%;
     height: auto;
 }
+
+@media screen and (min-width: 700px) {
+    .logo {
+      width: 50%;
+    }
+  }
+
 </style>

@@ -19,14 +19,68 @@ import Footer from "../components/Footer.astro";
    
     <main>
       <Header />
-      <h1>CA Studiepartner</h1>
-      <h2>Vi hjælper dig fra dér hvor du er – til dér hvor du gerne vil være.</h2>
+      <h1>Din Studiepartner</h1>
     </main>
+
+    <main>
+      <div id="forside">
+        <div class="image-container">
+          <img src="img/studerende.webp" alt="Studiepartner">
+          <button id="tilmeld">Bliv medlem</button>
+        </div>    
+
+        <div id="slogan">
+          <h2>Vi hjælper dig, fra der hvor du er <br> — Til der hvor du gerne vil være</h2>
+        </div>
+
+  
+      </main>
+
+  </body>
 
     <footer>
       <Footer />    
     </footer>
-  
-  </body>
 
 </html>
+
+<style>
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #tilmeld {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  z-index: 2;
+  padding: 2% 10%;
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius);
+  border: 2px solid var(--primary-color);
+  color: var(--secondary-text);
+  font-family: Nexa;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+
+#tilmeld:hover {
+  background-color: var(--tertiary-background);
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+#slogan {
+  padding-top: 15%;
+}
+
+</style>
+
