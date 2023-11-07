@@ -42,7 +42,6 @@
   }
 }
 
-/* For extremely large screens */
 @media screen and (min-width: 1600px) {
   :root {
     --xxlg-size: 4cqw;
@@ -55,7 +54,6 @@
     --border-radius:0.6rem;
   }
 }
-
 
 @font-face {
   font-family: Nexa;
@@ -73,17 +71,45 @@
     margin: 0;
   }
 
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
   body {
     background-color: var(--secondary-background);
   }
 
-  footer {
-    background-color: var(--background-color);
-    padding: 2%;
+  button {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
+    border: 2px solid var(--primary-color);
+    color: var(--secondary-text);
+    font-family: Nexa;
+    transition: all 0.5s;
+    padding: 2% 5%;
+    margin: 3% 0;
+  }
+  button:hover{
+    background-color: var(--tertiary-background);
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
   }
 
-  header {
+  main {
+    padding: 3%;
+    line-height: 1.5em;
+  }
+
+  footer, header {
     background-color: var(--background-color);
+    padding: 2%;
+    line-height: 2em;
+
   }
 
   h1 {
@@ -95,6 +121,12 @@
 
   h2 {
     font-size: var(--xlg-size);
+    line-height: 35px;
     font-family: Nexa;
     color: var(--primary-color);
+  }
+
+  h3 {
+    font-size: var(--xlg-size);
+    padding: 5% 0;
   }

@@ -17,12 +17,12 @@ import Footer from "../components/Footer.astro";
 
   <body>
    
-    <main>
-      <Header />
-      <h1>Din Studiepartner</h1>
-    </main>
+      <header>
+        <Header />
+      </header>
 
     <main>
+      <h1>Din Studiepartner</h1>
       <div id="forside">
         <div class="image-container">
           <img src="img/studerende.webp" alt="Studiepartner">
@@ -33,7 +33,39 @@ import Footer from "../components/Footer.astro";
           <h2>Vi hjælper dig, fra der hvor du er <br> — Til der hvor du gerne vil være</h2>
         </div>
 
-  
+        <section id="membership">
+          <h3>Medlemsfordele</h3>
+          <li><a href="/#"><img src="arrow.svg" alt="Arrow Icon"> Gratis a-kasse</a></li>
+          <li></li><a href="/#"><img src="arrow.svg" alt="Arrow Icon"> Billig studieforsikring</a></li>
+          <li></li><a href="/#"><img src="arrow.svg" alt="Arrow Icon"> Gratis advokathjælp</a></li>
+          <li></li><a href="/#"><img src="arrow.svg" alt="Arrow Icon"> Rabatter og fordele </a></li>
+          <li></li><a href="/#"><img src="arrow.svg" alt="Arrow Icon"> Rabatter og fordele</a></li>
+        </section>
+        <button id="read_more">Læs mere</button>
+
+        <section id="aboutus">
+          <h3>Om os</h3>
+          <p>Velkommen til CA – din dedikerede karrierepartner under din studietid. Vi er her for at støtte dig i din uddannelse inden for forretningsområder som økonomi & finans, projektledelse, marketing, kommunikation, IT & e-commerce, ledelse & strategi, HR og lignende fagområder.
+          <br>
+          <br>
+          Vi stræber efter at sikre, at din studietid ikke kun er præget af faglig læring, men også af trivsel og forberedelse til en succesfuld karriere efter endt uddannelse.</p>
+        </section>
+        <button id="read_more">Læs mere</button>
+
+        <img src="img/group.webp">
+
+        <h3>Har du spørgsmål til tilmelding, eller bare brug for at høre mere?</h3>
+        <div id="buttons">
+          <button id="callme">Ring mig op</button>
+          <button id="contact_us">Kontakt os</button>
+        </div>
+      </div>
+
+      <blockquote>
+        <p><img src="quote.svg" alt="Citat">CA var min studiepartner under studietiden og jeg var ikke et sekund i tvivl om, at jeg havde valgt den rette a-kasse.</p>
+        <span>Majbrit, Cand.merc. i International Business & Marketing</span>
+      </blockquote>
+
       </main>
 
   </body>
@@ -52,34 +84,36 @@ import Footer from "../components/Footer.astro";
     justify-content: center;
   }
 
+ blockquote {
+    padding: 8% 0;
+    display: ;
+  }
+
   img {
     max-width: 100%;
     height: auto;
   }
 
-  #tilmeld {
-  cursor: pointer;
+#tilmeld {
   position: absolute;
   top: 40%;
   z-index: 2;
-  padding: 2% 10%;
-  background-color: var(--primary-color);
-  border-radius: var(--border-radius);
-  border: 2px solid var(--primary-color);
-  color: var(--secondary-text);
-  font-family: Nexa;
   font-size: 20px;
-  transition: all 0.5s;
-}
-
-#tilmeld:hover {
-  background-color: var(--tertiary-background);
-  border: 2px solid var(--primary-color);
-  color: var(--primary-color);
+  padding: 2% 10%;
 }
 
 #slogan {
   padding-top: 15%;
+}
+
+blockquote p {
+  font-style: italic;
+}
+
+span {
+  font-size: var(--lg-size);
+  color: var(--primary-variant-color);
+  font-family: Nexa;
 }
 
 </style>
