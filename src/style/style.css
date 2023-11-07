@@ -1,8 +1,9 @@
 :root {
     --primary-color:#0094D6;
     --primary-variant-color:#0A79AE;
-    --hover-color:#054674;
+    --hover-color:#044672;
     --background-color:#E6E6DE;
+    --secondary-background:#F9F9F7;
     --primary-text: #4A4A4A;
 }
 
@@ -14,10 +15,16 @@
 * {
     font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
     color: var(--primary-text);  
+    margin: 0;
   }
 
   body {
+    background-color: var(--secondary-background);
+  }
+
+  footer {
     background-color: var(--background-color);
+    padding: 2%;
   }
 
   h1, h2 {

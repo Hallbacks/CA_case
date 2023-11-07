@@ -1,17 +1,86 @@
 <footer>
-      <div class="footer">
-        <a href="/#">OM CA</a>
-        <a href="/#">Kontakt</a>
-        <a href="/#">Nyheder</a>
-        <a href="/#">Nyhedsbrev</a>
-        <a href="/#">Studiepartner</a>
+
+      <div class="footer_link1">
+        <a href="/#"><img src="arrow.svg" alt="Arrow Icon"> OM CA</a>        
+        <a href="/#"><img src="arrow.svg" alt="Arrow Icon"> Kontakt os</a>
+        <a href="/#"><img src="arrow.svg" alt="Arrow Icon"> Nyhedsbrev</a>
     </div>
+
+    <div class="footer_link2">
+      <div class="links">
+        <a href="/#"><img src="arrow.svg" alt="Arrow Icon"> Cookiepolitik</a>
+        <a href="/#"><img src="arrow.svg" alt="Arrow Icon"> Tilgængelighedserklæring</a>
+      </div>
+      <a href="/#"><img src="arrow.svg" alt="Arrow Icon"> Persondatapolitik</a>
+    </div>
+
+      <div class="phone">
+        <p>Telefon hverdage 08:00 – 15:00<br>
+          <span id="phone">3314 9045</p>
+      </div>
+
+      <div id="logos">
+        <a href="/#"><img src="/trustpilot.svg" alt="Trustpilot"/></a>
+        <a href="/#"><img src="/favicon.svg" alt="CA"/></a>
+      </div>
+
+<div class="social-icons">
+  <a href="/#"><img src="/linkedin.svg" alt="LinkedIn" /></a>
+  <a href="/#"><img src="/facebook.svg" alt="Facebook" /></a>
+  <a href="/#"><img src="/instagram.svg" alt="Instagram" /></a>
+  <a href="/#"><img src="/x.svg" alt="X" /></a>
+</div>
+
+
 </footer>
 
 <style>
+
+@media screen and (min-width: 2200px) {
+      img {
+        width: 350%;
+      }
+    }
 footer {
     line-height: 2em;
 }
+
+.footer_link2 {
+  margin-top: 4%;
+  margin-bottom: 10%;
+}
+
+.phone p, #phone {
+  font-family: Nexa;
+}
+
+#phone {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.footer_link2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.footer_link2 a {
+  margin-right: 25px;
+  font-size: 12px;
+}
+
+.social-icons {
+      display: flex;
+      flex-direction: row;
+      margin-top: 2em;
+      justify-content: space-evenly;
+    }
 
 li {
     list-style: none;
@@ -25,5 +94,18 @@ li {
   a:hover {
     color: #054674;
   }
+
+  #logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+  #logos img {
+  margin: 0;
+  width: 120px;
+}
+
+
 
 </style>
