@@ -118,7 +118,7 @@
 
   footer, header {
     background-color: var(--background-color);
-    padding: 8px;
+    padding: 10px;
     line-height: 2em;
   }
 
