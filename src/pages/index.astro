@@ -33,15 +33,41 @@ import Footer from "../components/Footer.astro";
           <h2>Vi hjælper dig, fra der hvor du er <br> — Til der hvor du gerne vil være</h2>
         </div>
 
+        <h3>Medlemsfordele</h3>
         <section id="membership">
-          <h3>Medlemsfordele</h3>
-          <li><a href="/#"><img src="arrow.svg" alt="Arrow Icon"> Gratis a-kasse</a></li>
-          <li></li><a href="/#"><img src="arrow.svg" alt="Arrow Icon"> Billig studieforsikring</a></li>
-          <li></li><a href="/#"><img src="arrow.svg" alt="Arrow Icon"> Gratis advokathjælp</a></li>
-          <li></li><a href="/#"><img src="arrow.svg" alt="Arrow Icon"> Rabatter og fordele </a></li>
-          <li></li><a href="/#"><img src="arrow.svg" alt="Arrow Icon"> Rabatter og fordele</a></li>
+          <li>
+            <a href="#" id="benefit-link"><img src="arrow.svg" alt="Arrow Icon"> Gratis a-kasse</a>
+            <p id="benefit-content">Få gratis a-kasse under din uddannelse med CA studiemedlemsskab. På den måde er du garanteret dagpenge som nyuddannet, hvis du skulle stå uden job efter endt uddannelse.</p>
+          </li>
+
+          <li>
+            <a href="#" id="benefit-link"><img src="arrow.svg" alt="Arrow Icon"> Billig studieforsikring</a>
+            <p id="benefit-content">Billig studieforsikring</a>
+              Som gratis studiemedlem i CA får du adgang til en skræddersyet og billig forsikring til studerende- indbo-, ulykke- samt rejseforsikring.</p>
+          </li>
+
+          <li>
+            <a href="#" id="benefit-link"><img src="arrow.svg" alt="Arrow Icon"> Gratis advokathjælp</a>
+            <p id="benefit-content">Du får CA Advokathjælp for studerende for 0 kr. Så kan du få tjekket kontrakten til dit studiejob af professionelle advokater. Du kan også få kort juridisk rådgivning om fx kontrakt og ansættelsesforhold helt gratis.</p>
+          </li>
+
+          <li>
+            <a href="#" id="benefit-link"><img src="arrow.svg" alt="Arrow Icon"> Rabatter og fordele</a>
+            <p id="benefit-content">Som medlem af CA kan du få rabat hos nogle af vores samarbejdspartnere. Du får allerede rabat på udvalgt faglig kompetenceudvikling, men det kan være, der er noget andet, du søger.</p>
+          </li>
+
+          <li>
+            <a href="#" id="benefit-link"><img src="arrow.svg" alt="Arrow Icon"> Gratis kurser</a>
+            <p id="benefit-content">Dit CA-medlemskab giver dig gratis adgang til onlinekurser.dk, hvor du kan udvikle dine kompetencer og færdigheder.Fx Adobe CC, grafik, kommunikation og markedsføring, video, It-sikkerhed, økonomi og projektledelse.</p>
+          </li>
+
+          <blockquote>
+            <p><img src="quote.svg" alt="Citat">CA var min studiepartner under studietiden og jeg var ikke et sekund i tvivl om, at jeg havde valgt den rette a-kasse.</p>
+            <span>– Majbrit, Cand.merc. i International <br> Business & Marketing</span>
+          </blockquote>
+
         </section>
-        <button id="read_more">Læs mere</button>
+
 
         <section id="aboutus">
           <h3>Om os</h3>
@@ -61,10 +87,6 @@ import Footer from "../components/Footer.astro";
         </div>
       </div>
 
-      <blockquote>
-        <p><img src="quote.svg" alt="Citat">CA var min studiepartner under studietiden og jeg var ikke et sekund i tvivl om, at jeg havde valgt den rette a-kasse.</p>
-        <span>Majbrit, Cand.merc. i International Business & Marketing</span>
-      </blockquote>
 
       </main>
 
@@ -77,16 +99,13 @@ import Footer from "../components/Footer.astro";
 </html>
 
 <style>
+
+
 .image-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-
- blockquote {
-    padding: 8% 0;
-    display: ;
   }
 
   img {
@@ -95,26 +114,59 @@ import Footer from "../components/Footer.astro";
   }
 
 #tilmeld {
-  position: absolute;
   top: 40%;
-  z-index: 2;
   font-size: 20px;
   padding: 2% 10%;
 }
-
-#slogan {
-  padding-top: 15%;
-}
-
 blockquote p {
   font-style: italic;
+  line-height: 30px;
+  width: auto;
 }
 
-span {
+blockquote span {
   font-size: var(--lg-size);
   color: var(--primary-variant-color);
   font-family: Nexa;
+  text-align: right;
+  float: right;
+  clear: both;
+}
 }
 
+#buttons {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+}
+#membership {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 2em;
+}
+
+#membership li p.show {
+  display: block;
+}
+
+@media screen and (max-width: 1000px) {
+  #membership li p {
+    display: none;
+  }
+}
+#benefit-content {
+  margin: 3.5% 0;
+}
+
+#benefit-link {
+font-family: Nexa;
+font-size: var(--lg-size);
+}
+
+
+
 </style>
+
+<script src="../js/script.js"></script>
+
 
