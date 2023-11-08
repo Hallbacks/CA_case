@@ -29,3 +29,4 @@ document.querySelectorAll(".nav_link").forEach(n => n.addEventListener("click", 
       });
     });
   });
+  

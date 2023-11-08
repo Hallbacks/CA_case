@@ -1,11 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 27.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 10.1 8.7" style="enable-background:new 0 0 10.1 8.7;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#0094D6;}
-	.st1{fill:none;stroke:#044672;}
-</style>
-<path class="st0" d="M2,8.8L2,8.8c2.5,0,4.4-2,4.4-4.4v0c0-2.5-2-4.4-4.4-4.4h0c-2.5,0-4.4,2-4.4,4.4v0C-2.4,6.8-0.4,8.8,2,8.8z"/>
-<path id="Path_1" class="st1" d="M0.4,0.4l4,4l-4,4"/>
+<svg width="20" height="15" viewBox="0 0 52 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="18.5" cy="18.5" r="18.5" fill="#0094D6"/>
+  <path d="M27.2374 20.2374C27.9209 19.554 27.9209 18.446 27.2374 17.7626L16.1005 6.62563C15.4171 5.94221 14.309 5.94221 13.6256 6.62563C12.9422 7.30905 12.9422 8.41709 13.6256 9.1005L23.5251 19L13.6256 28.8995C12.9422 29.5829 12.9422 30.691 13.6256 31.3744C14.309 32.0578 15.4171 32.0578 16.1005 31.3744L27.2374 20.2374ZM25 20.75H26V17.25H25V20.75Z" fill="#044672"/>
+  <rect x="37" y="3" width="15" height="15" fill="transparent" /> <!-- Add a transparent rectangle for space -->
 </svg>
