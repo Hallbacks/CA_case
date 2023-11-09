@@ -144,7 +144,7 @@
     border: 2px solid var(--primary-color);
     color: var(--secondary-text);
     transition: all 0.5s;
-    padding: 2% 5%;
+    padding: 1% 4%;
     margin: 3% 0;
     bottom: 200px;
     font-size: var(--lg-size);

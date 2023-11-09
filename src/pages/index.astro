@@ -13,7 +13,7 @@ import Footer from "../components/Footer.astro";
     <meta name="viewport" content="width=device-width"/>
     <meta name="description" content="Vi er et supplement til dit studie og arbejder for, at du får et lettere studieliv og styrket dine muligheder for at skabe et inspirerende og godt arbejdsliv efter dit studie."/>
     <meta name="generator" content={Astro.generator} />
-    <title>CA | Studiepartner</title>
+    <title>CA A-kasse | Studiepartner</title>
   </head>
 
   <body>
@@ -134,21 +134,21 @@ blockquote span {
 }
 
 #benefit-link {
-font-size: var(--lg-size);
-display: flex;
+  font-size: var(--lg-size);
+  display: flex;
 }
 
-  #benefit-link img {
-    transition: transform 0.4s ease;
+#benefit-link img {
+  transition: transform 0.01s;
   }
 
-  #benefit-link.active img {
-    transform: rotate(90deg);
+#benefit-link.active img {
+  transform: rotate(90deg);
   }
 
 span {
   color: var(--primary-variant-color);
-  font-size: var(---size);
+  font-size: var(--lg-size);
 }
 
 @media screen and (min-width: 700px) {
@@ -156,7 +156,6 @@ span {
     display: block;
     margin-bottom: 2%;
   }
-
   #aboutus p{
   max-width: 70%;
 }
