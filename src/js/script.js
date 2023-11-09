@@ -16,6 +16,19 @@ document.querySelectorAll(".nav_link").forEach(n => n.addEventListener("click", 
 
 // FORDELE
 
+document.addEventListener('DOMContentLoaded', function () {
+  const benefitLinks = document.querySelectorAll('#benefit-link');
+
+  benefitLinks.forEach(link => {
+    link.addEventListener('click', function () {
+      // Toggle the active class on the clicked link
+      this.classList.toggle('active');
+    });
+  });
+});
+
+// FORDELE OPEN
+
   document.addEventListener('DOMContentLoaded', () => {
     const benefitLinks = document.querySelectorAll('section#membership li a');
     const benefitContents = document.querySelectorAll('section#membership li p');
@@ -29,4 +42,5 @@ document.querySelectorAll(".nav_link").forEach(n => n.addEventListener("click", 
       });
     });
   });
-  
+
+

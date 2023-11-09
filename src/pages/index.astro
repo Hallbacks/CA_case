@@ -1,6 +1,7 @@
 ---
 import "../style/style.css";
 import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
 import Footer from "../components/Footer.astro";
 ---
 
@@ -22,14 +23,7 @@ import Footer from "../components/Footer.astro";
       </header>
 
     <main>
-      <div id="forside">
-        <section id="forside">
-          <h1>Din Studiepartner</h1>
-            <img src="img/studerende.webp" alt="Studiepartner">
-            <button id="tilmeld">Bliv medlem</button>
-            <h2>Vi hjælper dig, fra der hvor du er <br> — Til der hvor du gerne vil være</h2>
-        </section>
-      </div>
+      <Hero/>
 
         <h3>Medlemsfordele</h3>
         <section id="membership">
@@ -45,12 +39,12 @@ import Footer from "../components/Footer.astro";
 
           <li>
             <a href="#" id="benefit-link"><img src="arrow_blue.svg" alt="Arrow Icon"> Gratis advokathjælp</a>
-            <p id="benefit-content">Du får CA Advokathjælp for studerende for 0 kr. Så kan du få tjekket kontrakten til dit studiejob af professionelle advokater. <br> Du kan også få kort juridisk rådgivning om fx kontrakt og ansættelsesforhold helt gratis.</p>
+            <p id="benefit-content">Du får CA Advokathjælp for studerende for 0 kr. Så kan du få tjekket kontrakten til dit studiejob af professionelle advokater. Du kan også få kort juridisk rådgivning om fx kontrakt og ansættelsesforhold helt gratis.</p>
           </li>
 
           <li>
             <a href="#" id="benefit-link"><img src="arrow_blue.svg" alt="Arrow Icon"> Rabatter og fordele</a>
-            <p id="benefit-content">Som medlem af CA kan du få rabat hos nogle af vores samarbejdspartnere. <br> Du får allerede rabat på udvalgt faglig kompetenceudvikling, men det kan være, der er noget andet, du søger.</p>
+            <p id="benefit-content">Som medlem af CA kan du få rabat hos nogle af vores samarbejdspartnere. Du får allerede rabat på udvalgt faglig kompetenceudvikling, men det kan være, der er noget andet, du søger.</p>
           </li>
 
           <li>
@@ -69,7 +63,7 @@ import Footer from "../components/Footer.astro";
         <section id="aboutus">
           <h3>Om os</h3>
           <img src="img/aboutus.webp" alt="Om CA">
-          <p>Velkommen til CA – din dedikerede karrierepartner under din studietid. <br> Vi er her for at støtte dig i din uddannelse inden for forretningsområder som økonomi & finans, projektledelse, marketing, kommunikation, IT & e-commerce, ledelse & strategi, HR og lignende fagområder.
+          <span>Velkommen til CA – din dedikerede karrierepartner under din studietid.</span><p><br> Vi er her for at støtte dig i din uddannelse inden for forretningsområder som økonomi & finans, projektledelse, marketing, kommunikation, IT & e-commerce, ledelse & strategi, HR og lignende fagområder.
           <br>
           <br>
           Vi stræber efter at sikre, at din studietid ikke kun er præget af faglig læring, men også af trivsel og forberedelse til en succesfuld karriere efter endt uddannelse.</p>        
@@ -83,8 +77,6 @@ import Footer from "../components/Footer.astro";
         </div>
         </section>
 
-
-
       </main>
 
   </body>
@@ -96,12 +88,6 @@ import Footer from "../components/Footer.astro";
 </html>
 
 <style>
-
-
-img {
-    max-width: 100%;
-    height: auto;
-  }
 
 #tilmeld {
   top: 40%;
@@ -127,10 +113,12 @@ blockquote span {
   gap: 3em;
 }
 #membership {
-  background-color: var(--secondary-background);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 2em;
+}
+#benefit-link img {
+  margin-right: 12px; 
 }
 
 #membership li p.show {
@@ -142,11 +130,25 @@ blockquote span {
   display: none;
 }
 #benefit-content {
-  margin: 3.5% 0;
+  margin: 2% 0;
 }
 
 #benefit-link {
 font-size: var(--lg-size);
+display: flex;
+}
+
+  #benefit-link img {
+    transition: transform 0.4s ease;
+  }
+
+  #benefit-link.active img {
+    transform: rotate(90deg);
+  }
+
+span {
+  color: var(--primary-variant-color);
+  font-size: var(---size);
 }
 
 @media screen and (min-width: 700px) {
@@ -159,16 +161,15 @@ font-size: var(--lg-size);
   max-width: 70%;
 }
 
-  #forside {
-  background-image: url('/card.svg');
-  padding: 0 8%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 }
 @media screen and (max-width: 1000px) {
   #membership li p {
     display: none;
+   }
+  }
+   @media screen and (min-width: 1000px) {
+    #membership a {
+  pointer-events: none;
   }
 }
   @media screen and (max-width: 500px) {
