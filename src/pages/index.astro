@@ -105,6 +105,7 @@ blockquote p {
   width: auto;
   padding-top: 5%;
   padding-bottom: 3%;
+  float: right;
 }
 blockquote span {
   color: var(--primary-variant-color);
@@ -189,22 +190,21 @@ blockquote span {
 }  #membership {
   gap: 4em;
 }
+    #aboutus h3 {
+      padding-top: 2%;
+    }
 
-#aboutus h3 {
-  padding-top: 2%;
-}
+    #read-more {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      padding-bottom: 3%;
+      padding: 3% 0;
+    }
 
-#read-more {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  padding-bottom: 3%;
-  padding: 3% 0;
-}
-
-#read_more {
-  padding: 3%;
-  width: 75%;
-}
+    #read_more {
+      padding: 3%;
+      width: 75%;
+    }
 
 }
 @media screen and (max-width: 1000px) {
@@ -223,10 +223,10 @@ blockquote span {
     }
       blockquote {
     max-width: 450px;
-  }
-  #buttons {
-    margin-bottom: 10%;
-  }
+    }
+    #buttons {
+      margin-bottom: 10%;
+    }
 }
 
 </style>
