@@ -54,7 +54,7 @@ import Footer from "../components/Footer.astro";
 
           <blockquote>
             <p><img src="quote.svg" alt="Citat">CA var min studiepartner under studietiden og jeg var ikke et sekund i tvivl om, at jeg havde valgt den rette a-kasse.</p>
-            <span>– Majbrit, Cand.merc. i International i Business & Marketing</span>
+            <span>– Majbrit, Cand.merc. i <br> International i Business & Marketing</span>
           </blockquote>
 
         </section>
@@ -102,8 +102,8 @@ blockquote p {
 blockquote span {
   margin-top: 2%;
   color: var(--primary-variant-color);
-  text-align: right;
-  float: right;
+  text-align: left;
+  float: left;
   clear: both;
 }
 
@@ -129,6 +129,7 @@ blockquote span {
 #aboutus img {
   display: none;
 }
+
 #benefit-content {
   margin: 2% 0;
 }
@@ -159,7 +160,11 @@ span {
   #aboutus p{
   max-width: 70%;
 }
+blockquote span {
+  text-align: right;
+  float: right;
 
+}
 }
 @media screen and (max-width: 1000px) {
   #membership li p {

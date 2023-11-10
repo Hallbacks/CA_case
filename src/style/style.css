@@ -135,6 +135,8 @@
     font-size: var(--xlg-size);
     padding: 5% 0;
     margin-top: 3%;
+    font-weight: lighter;
+
   }
 
   button {
