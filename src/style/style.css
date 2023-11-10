@@ -58,11 +58,13 @@
 @font-face {
   font-family: Nexa;
   src: url(../font/Nexa_regular.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: Nexa_bold;
-  src: url(../font/Nexa_bold.ttf)
+  src: url(../font/Nexa_bold.ttf);
+  font-display: swap;
 }
 
 * {
@@ -79,7 +81,7 @@
   }    
 
   img {
-    max-width: 100%;
+   max-width: 100%;
     height: auto;
   }
 
