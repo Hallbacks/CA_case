@@ -5,4 +5,9 @@
 <ellipse cx="109.5" cy="109.006" rx="109.5" ry="109.006" transform="matrix(1 0 0 -1 0 2289)" fill="#F9F9F7"/>
 <rect width="1345" height="1876.49" transform="matrix(1 0 0 -1 0 2180.49)" fill="#F9F9F7"/>
 <rect width="1236" height="1985" transform="matrix(1 0 0 -1 109 2289)" fill="#F9F9F7"/>
+<rect width="1345" height="1165" transform="matrix(1 0 0 -1 0 2040)" fill="#F9F9F7"/>
+<ellipse cx="109.5" cy="162.006" rx="109.5" ry="109.006" fill="#CDC5B6"/>
+<rect y="161.508" width="1345" height="1876.49" fill="#CDC5B6"/>
+<rect x="109" y="53" width="1236" height="1985" fill="#CDC5B6"/>
+<rect y="681" width="1345" height="1357" fill="#F9F9F7"/>
 </svg>

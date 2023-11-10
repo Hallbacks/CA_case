@@ -133,7 +133,7 @@
 
   h3 {
     font-size: var(--xlg-size);
-    padding: 5% 0;
+    padding-bottom: 5%;
     margin-top: 3%;
     font-weight: lighter;
 
@@ -147,7 +147,6 @@
     color: var(--secondary-text);
     transition: all 0.5s;
     padding: 1% 4%;
-    margin: 3% 0;
     bottom: 200px;
     font-size: var(--lg-size);
   }

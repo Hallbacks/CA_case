@@ -17,26 +17,26 @@
     <p>Telefon hverdage 08:00 – 15:00</p>
     <span id="phone">3314 9045</span>
   </div>
+</footer>
 
-  <br>
 
+<div class="links">
   <div id="logos">
     <a href="https://dk.trustpilot.com/review/www.ca.dk" target="_blank"><img src="/trustpilot.svg" alt="Trustpilot" /></a>
     <a href="/#"><img src="/logo_small.svg" alt="CA" /></a>
   </div>
       
-  </div>
-
   <div class="socials">
     <a href="https://www.linkedin.com/company/caakasse/?originalSubdomain=dk" target="/linkedin.svg"><img src="/linkedin.svg" alt="LinkedIn" /></a>
     <a href="https://www.facebook.com/Studiepartner" target="_blank"><img src="/facebook.svg" alt="Facebook" /></a>
     <a href="https://www.instagram.com/caakasse/" target="_blank"><img src="/instagram.svg" alt="Instagram" /></a>
     <a href="https://www.tiktok.com/@caakasse" target="_blank"><img src="/tiktok.svg" alt="TikTok" /></a>
   </div>
-</footer>
+</div>
 
   <style>
-    * {
+
+* {
       max-width: 1100px;
       margin: 0 auto;
     }
@@ -57,8 +57,8 @@
       margin-top: 4%;
       margin-bottom: 10%;
     }
-
     .socials {
+      margin-top: 7%;
       display: flex;
       gap: 50px;
     }
@@ -86,7 +86,7 @@
       width: 150px;
     }
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 800px) {
       footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -102,7 +102,21 @@
     .footer_link2 {
       margin-top: 0%;
   }
-}
+
+    .links {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+  }
+
+    #logos img {
+      margin: 0;
+      width: 180px;
+      padding: 0 80px;
+    }
+    .links {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+    }
+    }
   
   </style>
-</div>
