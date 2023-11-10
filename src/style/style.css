@@ -165,7 +165,7 @@
   @media screen and (min-width: 1200px) {
     main {
       background-color: var(--background-color);
-      background: url('baggrund.png');
+      background: url('baggrund.jpg');
       background-size: cover; 
   } 
 }
