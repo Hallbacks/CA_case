@@ -151,6 +151,7 @@ button {
     padding: 1% 4%;
     bottom: 200px;
     font-size: var(--lg-size);
+  
 }
 
 button:hover {
