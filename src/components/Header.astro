@@ -2,8 +2,8 @@
 import Nav from "./Nav.astro";
 ---
 
-<header>
-  <div class="logo">
+<header id="mainHeader">
+    <div class="logo">
     <a href="/#" class="nav_logo">
       <img src="/logo_small.svg" alt="CA Logo" class="small-logo" />
       <img src="/logo_long.svg" alt="CA Logo" class="large-logo" />
@@ -13,9 +13,10 @@ import Nav from "./Nav.astro";
 </header>
 
 <style>
+
   
 .logo {
-  z-index: 4;
+  z-index: 5;
 }
 
 header {
@@ -30,8 +31,7 @@ header {
 }
 
 .small-logo {
-  display: block;
-  
+  display: block; 
 }
 
 .large-logo {
@@ -51,6 +51,5 @@ header {
     height: auto;
 }
 }
-
 
 </style>

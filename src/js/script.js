@@ -14,14 +14,13 @@ document.querySelectorAll(".nav_link").forEach(n => n.addEventListener("click", 
   
 }))
 
-// FORDELE
+// FORDELE PIL
 
 document.addEventListener('DOMContentLoaded', function () {
   const benefitLinks = document.querySelectorAll('#benefit-link');
 
   benefitLinks.forEach(link => {
     link.addEventListener('click', function () {
-      // Toggle the active class on the clicked link
       this.classList.toggle('active');
     });
   });

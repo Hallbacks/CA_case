@@ -1,13 +1,14 @@
 <svg width="1345" height="2289" viewBox="0 0 1345 2289" fill="none" xmlns="http://www.w3.org/2000/svg">
-<ellipse cx="109.5" cy="109.006" rx="109.5" ry="109.006" fill="#F9F9F7"/>
+<ellipse cx="109.5" cy="109.006" rx="109.5" ry="109.006" fill="#F1F1EC"/>
 <rect y="108.508" width="1345" height="1876.49" fill="#F9F9F7"/>
-<rect x="109" width="1236" height="1985" fill="#F9F9F7"/>
+<rect x="109" width="1236" height="1985" fill="#F1F1EC"/>
 <ellipse cx="109.5" cy="109.006" rx="109.5" ry="109.006" transform="matrix(1 0 0 -1 0 2289)" fill="#F9F9F7"/>
 <rect width="1345" height="1876.49" transform="matrix(1 0 0 -1 0 2180.49)" fill="#F9F9F7"/>
-<rect width="1236" height="1985" transform="matrix(1 0 0 -1 109 2289)" fill="#F9F9F7"/>
-<rect width="1345" height="1165" transform="matrix(1 0 0 -1 0 2040)" fill="#F9F9F7"/>
-<ellipse cx="109.5" cy="162.006" rx="109.5" ry="109.006" fill="#CDC5B6"/>
-<rect y="161.508" width="1345" height="1876.49" fill="#CDC5B6"/>
-<rect x="109" y="53" width="1236" height="1985" fill="#CDC5B6"/>
-<rect y="681" width="1345" height="1357" fill="#F9F9F7"/>
+<rect width="1236" height="1985" transform="matrix(1 0 0 -1 109 2289)" fill="#F1F1EC"/>
+<rect width="1345" height="1165" transform="matrix(1 0 0 -1 0 2040)" fill="#F1F1EC"/>
+<ellipse cx="109.5" cy="147.006" rx="109.5" ry="109.006" fill="#CDC5B6"/>
+<rect y="146.508" width="1345" height="1876.49" fill="#CDC5B6"/>
+<rect x="109" y="38" width="1236" height="1985" fill="#CDC5B6"/>
+<rect y="573" width="1345" height="1607" fill="#F9F9F7"/>
+<rect x="109" y="2180" width="1236" height="109" fill="#F9F9F7"/>
 </svg>
