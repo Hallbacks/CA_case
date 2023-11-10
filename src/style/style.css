@@ -162,7 +162,7 @@ button:hover {
 @media screen and (min-width: 1200px) {
     main {
         background-color: var(--background-color);
-        background-image: url('baggrund.png');
+        background-image: url('/img/baggrund.png');
         background-size: cover; 
     } 
 }
