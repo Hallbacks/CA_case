@@ -58,16 +58,17 @@ import Footer from "../components/Footer.astro";
           <h3>Om os</h3>
           <span>Velkommen til CA – din dedikerede karrierepartner under din studietid.</span>
           <p><br> Vi er her for at støtte dig i din uddannelse inden for forretningsområder som økonomi & finans, projektledelse, marketing, kommunikation, IT & e-commerce, ledelse & strategi, HR og lignende fagområder.</p>
+          <img src="img/camember.webp" alt="Studerende">
           <section id="read-more">
             <p>Vi stræber efter at sikre, at din studietid ikke kun er præget af faglig læring, men også af trivsel og forberedelse til en succesfuld karriere efter endt uddannelse.</p>
             <button id="read_more">Læs mere</button>         
           </section>
-          <img src="img/aboutus.webp" alt="Om CA">
+
         </section>
 
 
           <section id=questions>
-            <img src="img/group.webp" alt="Spørgsmål">
+            <img src="img/group.webp" alt="Questions"> 
             <h3>Har du spørgsmål til tilmelding, eller <br> bare brug for at høre mere?</h3>  
           </section>
 
@@ -97,16 +98,12 @@ import Footer from "../components/Footer.astro";
 blockquote p {
   font-style: italic;
   width: auto;
+  padding-bottom: 2%;
 }
 
 blockquote span {
-  margin-top: 2%;
   color: var(--primary-variant-color);
-  text-align: right;
-  float: right;
-  clear: both;
 }
-
 #questions h3 {
     text-align: center;
   }
@@ -134,6 +131,10 @@ blockquote span {
   display: none;
 }
 
+#aboutus p {
+  padding-bottom: 5%;
+}
+
 #aboutus {
   padding-top: 5%;
 }
@@ -155,7 +156,6 @@ blockquote span {
 #read_more {
   align-self: flex-end;
   justify-self: end;
-  margin: 5% 0;
 }
 
 #benefit-link img {
@@ -183,13 +183,14 @@ span {
 }
 
 #aboutus h3 {
-  padding-top: 3%;
+  padding-top: 2%;
 }
 
 #read-more {
   display: grid;
   grid-template-columns: 3fr 1fr;
   padding-bottom: 3%;
+  padding: 3% 0;
 }
 
 #read_more {
