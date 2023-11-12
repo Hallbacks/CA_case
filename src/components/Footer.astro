@@ -6,114 +6,126 @@
   </div>
 
   <div class="footer_link2">
-    <a href="/#"><img src="icons/arrow.svg" alt="Arrow Icon" /> Cookiepolitik</a>
+    <a href="/#"><img src="icons/arrow.svg" alt="Arrow Icon" /> Cookiepolitik</a
+    >
     <a href="/#"
       ><img src="icons/arrow.svg" alt="Arrow Icon" /> Tilgængelighedserklæring</a
     >
-    <a href="/#"><img src="icons/arrow.svg" alt="Arrow Icon" /> Persondatapolitik</a>
+    <a href="/#"
+      ><img src="icons/arrow.svg" alt="Arrow Icon" /> Persondatapolitik</a
+    >
   </div>
 
   <div class="phone">
     <p>Telefon hverdage 08:00 – 15:00</p>
     <span id="phone">3314 9045</span>
+    <p></p>
   </div>
 </footer>
 
-
 <div class="links">
   <div id="logos">
-    <a href="https://dk.trustpilot.com/review/www.ca.dk" target="_blank"><img src="icons/trustpilot.svg" alt="Trustpilot" /></a>
+    <a href="https://dk.trustpilot.com/review/www.ca.dk" target="_blank"
+      ><img src="icons/trustpilot.svg" alt="Trustpilot" /></a
+    >
     <a href="/#"><img src="icons/logo_small.svg" alt="CA" /></a>
   </div>
-      
+
   <div class="socials">
-    <a href="https://www.linkedin.com/company/caakasse/?originalSubdomain=dk" target="_blank"><img src="icons/linkedin.svg" alt="LinkedIn" /></a>
-    <a href="https://www.facebook.com/Studiepartner" target="_blank"><img src="icons/facebook.svg" alt="Facebook" /></a>
-    <a href="https://www.instagram.com/caakasse/" target="_blank"><img src="icons/instagram.svg" alt="Instagram" /></a>
-    <a href="https://www.tiktok.com/@caakasse" target="_blank"><img src="icons/tiktok.svg" alt="TikTok" /></a>
+    <a
+      href="https://www.linkedin.com/company/caakasse/?originalSubdomain=dk"
+      target="_blank"><img src="icons/linkedin.svg" alt="LinkedIn" /></a
+    >
+    <a href="https://www.facebook.com/Studiepartner" target="_blank"
+      ><img src="icons/facebook.svg" alt="Facebook" /></a
+    >
+    <a href="https://www.instagram.com/caakasse/" target="_blank"
+      ><img src="icons/instagram.svg" alt="Instagram" /></a
+    >
+    <a href="https://www.tiktok.com/@caakasse" target="_blank"
+      ><img src="icons/tiktok.svg" alt="TikTok" /></a
+    >
   </div>
 </div>
 
-  <style>
+<style>
+  * {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .phone p {
+    font-family: Nexa;
+  }
 
-* {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-    .phone p {
-      font-family: Nexa;
-    }
+  #phone {
+    font-size: var(--xlg-size);
+    font-family: Nexa;
+  }
+  .footer_link1 a {
+    font-size: var(--lg-size);
+  }
+  .footer_link2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4%;
+    margin-bottom: 10%;
+  }
+  .socials {
+    margin-top: 3%;
+    display: flex;
+    gap: 50px;
+  }
 
-    #phone {
-      font-size: var(--xlg-size);
-      font-family: Nexa;
-    }
-    .footer_link1 a {
-      font-size: var(--lg-size);
-    }
-    .footer_link2 {
-      display: flex;
-      flex-direction: column;
-      margin-top: 4%;
-      margin-bottom: 10%;
-    }
-    .socials {
-      margin-top: 3%;
-      display: flex;
-      gap: 50px;
-    }
-
-    .footer_link2 a {
-      margin-left: 0;
-      font-size: var(--sm-size);
-    }
-    footer {
+  .footer_link2 a {
+    margin-left: 0;
+    font-size: var(--sm-size);
+  }
+  footer {
     padding-top: 2%;
   }
-    footer a {
-      display: block;
-      text-decoration: none;
+  footer a {
+    display: block;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #054674;
+  }
+  #logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #logos img {
+    margin: 0;
+    width: 150px;
+  }
+
+  @media screen and (min-width: 800px) {
+    footer {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 1%;
+      line-height: 40px;
     }
 
-    a:hover {
-      color: #054674;
-    }
-    #logos {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
     #logos img {
-      margin: 0;
-      width: 150px;
-    }
-
-    @media screen and (min-width: 800px) {
-      footer {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        margin-top: 1%;
-        line-height: 40px;
-      }
-
-      #logos img {
       margin: 0;
       width: 300px;
     }
 
     .footer_link2 {
       margin-top: 0%;
-  }
+    }
 
     .links {
       display: grid;
       grid-template-columns: 2fr 1fr;
-  }
+    }
 
-  .socials {
-    margin-top: 15%;
-
-  }
+    .socials {
+      margin-top: 15%;
+    }
     #logos img {
       margin: 0;
       width: 180px;
@@ -123,6 +135,5 @@
       display: grid;
       grid-template-columns: 2fr 1fr;
     }
-    }
-  
-  </style>
+  }
+</style>
