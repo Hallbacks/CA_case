@@ -9,217 +9,286 @@ import Footer from "../components/Footer.astro";
 <html lang="da">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image" href="favicon.svg"/>
-    <meta name="viewport" content="width=device-width"/>
-    <meta name="description" content="CA er din studie- og karrierepartner inden for business, tilbyder rådgivning, kurser og ressourcer for et lettere studieliv og styrker dine muligheder for en inspirerende karriere. Bliv medlem for adgang til forsikringer, gratis A-kasse, gratis advokathjælp, og værdifuld inspiration til studie og arbejdsliv.">
+    <link rel="icon" type="image" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="description"
+      content="CA er din studie- og karrierepartner inden for business, tilbyder rådgivning, kurser og ressourcer for et lettere studieliv og styrker dine muligheder for en inspirerende karriere. Bliv medlem for adgang til forsikringer, gratis A-kasse, gratis advokathjælp, og værdifuld inspiration til studie og arbejdsliv."
+    />
     <meta name="generator" content={Astro.generator} />
     <title>CA A-kasse | Studiepartner</title>
   </head>
 
   <body>
-   
-      <header>
-        <Header />
-      </header>
+    <header>
+      <Header />
+    </header>
 
     <main>
-      <Hero/>
+      <div class="background-container-offset">
+        <div class="background-container">
+          <Hero />
+        </div>
+        <div class="baggrund">
+          <div id="medlem">
+            <h3>Medlemsfordele</h3>
+            <section id="membership">
+              <li>
+                <a href="#" class="benefit-link"
+                  ><img
+                    src="icons/arrow_blue.svg"
+                    alt="Arrow Icon"
+                    class="icon"
+                  /> Gratis A-kasse</a
+                >
+                <p class="benefit-content">
+                  Få gratis A-kasse under din uddannelse med CA
+                  studiemedlemsskab.
 
-        <h3>Medlemsfordele</h3>
-        <section id="membership">
-          <li>
-            <a href="#" id="benefit-link"><img src="icons/arrow_blue.svg" alt="Arrow Icon"> Gratis A-kasse</a>
-            <p id="benefit-content">Få gratis A-kasse under din uddannelse med CA studiemedlemsskab. <br> På den måde er du garanteret dagpenge som nyuddannet, hvis du skulle stå uden job efter endt uddannelse.</p>
-          </li>
-          <li>
-            <a href="#" id="benefit-link"><img src="icons/arrow_blue.svg" alt="Arrow Icon"> Billig studieforsikring</a>
-            <p id="benefit-content">Som gratis studiemedlem i CA får du adgang til en skræddersyet og billig forsikring til studerende- indbo-, ulykke- og rejseforsikring hos vores samarbejdspartnere.
-          </li>
-          <li>
-            <a href="#" id="benefit-link"><img src="icons/arrow_blue.svg" alt="Arrow Icon"> Gratis advokathjælp</a>
-            <p id="benefit-content">Du får CA Advokathjælp for studerende for 0 kr. Så kan du få tjekket kontrakten til dit studiejob af professionelle advokater. Du kan også få kort juridisk rådgivning om fx kontrakt og ansættelsesforhold helt gratis.</p>
-          </li>
-          <li>
-            <a href="#" id="benefit-link"><img src="icons/arrow_blue.svg" alt="Arrow Icon"> Rabatter og fordele</a>
-            <p id="benefit-content">Som medlem af CA kan du få rabat hos nogle af vores samarbejdspartnere. Du får allerede rabat på udvalgt faglig kompetenceudvikling, men det kan være, der er noget andet, du søger.</p>
-          </li>
-          <li>
-            <a href="#" id="benefit-link"><img src="icons/arrow_blue.svg" alt="Arrow Icon"> Gratis kurser</a>
-            <p id="benefit-content">Dit CA-medlemskab giver dig gratis adgang til onlinekurser.dk, hvor du kan udvikle dine kompetencer og færdigheder. Fx. Adobe CC, grafik, kommunikation og markedsføring, video, it-sikkerhed, økonomi og projektledelse.</p>
-          </li>
-          <blockquote>
-            <p><img src="icons/quote.svg" alt="Citat">CA var min studiepartner under studietiden og jeg var ikke et sekund i tvivl om, at jeg havde valgt den rette a-kasse.</p>
-            <span>– Majbrit, Cand.merc. i <br> International i Business & Marketing</span>
-          </blockquote>
-        </section>
+                  <br /> På den måde er du garanteret dagpenge som nyuddannet,
+                  hvis du skulle stå uden job efter endt uddannelse.
+                </p>
+              </li>
+              <li>
+                <a href="#" class="benefit-link"
+                  ><img
+                    src="icons/arrow_blue.svg"
+                    alt="Arrow Icon"
+                    class="icon"
+                  /> Billig studieforsikring</a
+                >
+                <p class="benefit-content">
+                  Som gratis studiemedlem i CA får du adgang til en skræddersyet
+                  og billig forsikring til studerende- indbo-, ulykke- og
+                  rejseforsikring hos vores samarbejdspartnere.
+                </p>
+                <li>
+                  <a href="#" class="benefit-link"
+                    ><img
+                      src="icons/arrow_blue.svg"
+                      alt="Arrow Icon"
+                      class="icon"
+                    /> Gratis advokathjælp</a
+                  >
+                  <p class="benefit-content">
+                    Du får CA Advokathjælp for studerende for 0 kr. Så kan du få
+                    tjekket kontrakten til dit studiejob af professionelle
+                    advokater. Du kan også få kort juridisk rådgivning om fx
+                    kontrakt og ansættelsesforhold helt gratis.
+                  </p>
+                </li>
+                <li>
+                  <a href="#" class="benefit-link"
+                    ><img
+                      src="icons/arrow_blue.svg"
+                      alt="Arrow Icon"
+                      class="icon"
+                    />
+                     Rabatter og fordele</a
+                  >
+                  <p class="benefit-content">
+                    Som medlem af CA kan du få rabat hos nogle af vores
+                    samarbejdspartnere. Du får allerede rabat på udvalgt faglig
+                    kompetenceudvikling, men det kan være, der er noget andet,
+                    du søger.
+                  </p>
+                </li>
+                <li>
+                  <a href="#" class="benefit-link"
+                    ><img
+                      src="icons/arrow_blue.svg"
+                      alt="Arrow Icon"
+                      class="icon"
+                    /> Gratis kurser</a
+                  >
+                  <p class="benefit-content">
+                    Dit CA-medlemskab giver dig gratis adgang til
+                    onlinekurser.dk, hvor du kan udvikle dine kompetencer og
+                    færdigheder. Fx. Adobe CC, grafik, kommunikation og
+                    markedsføring, video, it-sikkerhed, økonomi og
+                    projektledelse.
+                  </p>
+                </li>
+                <blockquote>
+                  <p>
+                    <img src="icons/quote.svg" alt="Citat" class="q" />CA var
+                    min studiepartner under studietiden og jeg var ikke et
+                    sekund i tvivl om, at jeg havde valgt den rette a-kasse.
+                  </p>
+                  <div class="majbritt">
+                    <span>– Majbrit, Cand.merc. i</span>
+                    <br />
+                    <span>International i Business & Marketing</span>
+                  </div>
+                </blockquote>
+              </li>
+            </section>
+          </div>
 
-
-        <section id="aboutus">
-          <h3>Om os</h3>
-          <span>Velkommen til CA – din dedikerede karrierepartner under din studietid.</span>
-          <p><br> Vi er her for at støtte dig i din uddannelse inden for forretningsområder som økonomi & finans, projektledelse, marketing, kommunikation, IT & e-commerce, ledelse & strategi, HR og lignende fagområder.</p>
-          <section id="read-more">
-            <p>Vi stræber efter at sikre, at din studietid ikke kun er præget af faglig læring, men også af trivsel og forberedelse til en succesfuld karriere efter endt uddannelse.</p>
-            <button id="read_more">Læs mere</button>         
+          <section id="aboutus">
+            <h3>Om os</h3>
+            <span class="under_title"
+              >Velkommen til CA – din dedikerede karrierepartner under din
+              studietid.</span
+            >
+            <p class="about">
+              <br /> Vi er her for at støtte dig i din uddannelse inden for
+              forretningsområder som økonomi & finans, projektledelse,
+              marketing, kommunikation, IT & e-commerce, ledelse & strategi, HR
+              og lignende fagområder.
+              <br />
+              <br />
+               Vi stræber efter at sikre, at din studietid ikke kun er præget af
+              faglig læring, men også af trivsel og forberedelse til en
+              succesfuld karriere efter endt uddannelse.
+            </p>
+            <button class="read_more">Læs mere</button>
           </section>
-          <img src="img/camember.webp" alt="Studerende">
 
-        </section>
-
-
-          <section id=questions>
-            <img src="img/group.webp" alt="Questions"> 
-            <h3>Har du spørgsmål til tilmelding, eller <br> bare brug for at høre mere?</h3>  
+          <section id="questions">
+            <img id="img" src="img/group.webp" alt="Questions" />
+            <h3>
+              Har du spørgsmål til tilmelding, eller <br /> bare brug for at
+              høre mere?
+            </h3>
           </section>
 
           <div id="buttons">
-          <button id="call_me">Ring mig op</button>
-          <button id="contact_us">Kontakt os</button>
+            <button>Ring mig op</button>
+            <button>Kontakt os</button>
+          </div>
         </div>
-        </section>
-
-      </main>
-
+      </div>
+    </main>
   </body>
-
-    <footer>
-      <Footer />    
-    </footer>
-
 </html>
 
+<footer>
+  <Footer />
+</footer>
+
 <style>
-
-#tilmeld {
-  top: 40%;
-  font-size: 20px;
-  padding: 2% 10%;
-}
-blockquote p {
-  font-style: italic;
-  width: auto;
-  padding-top: 5%;
-  float: right;
-  padding-bottom: 2%;
-}
-blockquote span {
-  color: var(--primary-variant-color);
-  line-height: 25px;
-}
-
-#aboutus span {
-  color: var(--primary-variant-color);
-  font-size: var(--lg-size);
-}
-
-#aboutus h3 {
-  margin-bottom: 2%;
-}
-
-#questions h3 {
-    text-align: center;
+  main {
+    background-color: var(--secondary-background);
   }
 
-#buttons {
-  display: flex;
-  justify-content: center;
-  gap: 3em;
-}
-#membership {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  gap: 2em;
-}
-#benefit-link img {
-  margin-right: 12px; 
-}
+  blockquote p {
+    font-style: italic;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    max-width: 39ch;
+  }
+  .majbritt {
+    color: var(--primary-color);
 
-#membership li p.show {
-  display: block;
-  max-width: 400px;
-}
-
-#aboutus img {
-  display: none;
-}
-
-blockquote {
-    max-width: 350px;
-    }
-
-#aboutus {
-  padding-top: 5%;
-}
-
-#aboutus h3 {
-  padding-bottom: 2%;
-}
-
-#benefit-content {
-  margin: 2% 0;
-}
-
-#benefit-link {
-  font-size: var(--lg-size);
-  display: flex;
-}
-
-#read_more {
-  align-self: flex-end;
-  justify-self: end;
-  margin: 2% 0;
-  float: right;
-}
-
-#benefit-link img {
-  transition: transform 0.01s;
+    margin-left: 8.5rem;
+    font-size: var(--md-size);
+  }
+  .majbritt span {
+    color: var(--primary-color);
+  }
+  #aboutus span {
+    color: var(--primary-color);
+    font-size: var(--lg-size);
   }
 
-#benefit-link.active img {
-  transform: rotate(90deg);
-  }
-
-@media screen and (min-width: 700px) {
-  #aboutus img {
-    display: block;
+  #aboutus h3 {
     margin-bottom: 2%;
   }
 
-  blockquote {
-  text-align: left;
-}
-  #aboutus p{
-  max-width: 70%;
-}  #membership {
-  gap: 4em;
-}
+  #questions h3 {
+    text-align: center;
+  }
+
+  #buttons {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+  }
+  #membership {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 2em;
+  }
+  @media screen and (min-width: 1600px) {
+    #membership {
+      grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
+    }
+  }
+  .benefit-link img {
+    margin-right: 12px;
+  }
+
+  #membership li p.show {
+    display: block;
+  }
+
+  #aboutus {
+    padding-top: 5%;
+  }
+
+  #aboutus h3 {
+    padding-bottom: 2%;
+  }
+
+  .benefit-content {
+    margin: 2% 0;
+    max-width: 46ch;
+  }
+
+  @media screen and (min-width: 768px) {
+    .benefit-content {
+      max-width: 62ch;
+    }
+  }
+
+  .benefit-link {
+    font-size: var(--lg-size);
+    display: flex;
+  }
+
+  .read_more {
+    align-self: flex-end;
+    justify-self: end;
+    margin: 2% 0;
+    float: right;
+  }
+
+  .benefit-link img {
+    transition: transform 0.01s;
+  }
+
+  .benefit-link.active img {
+    transform: rotate(90deg);
+  }
+
+  @media screen and (min-width: 700px) {
+    #aboutus img {
+      display: block;
+      margin-bottom: 2%;
+    }
+
+    #aboutus p {
+      max-width: 70%;
+    }
+    #membership {
+      gap: 4em;
+    }
     #aboutus h3 {
       padding-top: 2%;
     }
-
-    #read-more {
-      display: grid;
-      grid-template-columns: 3fr 1fr;
-      padding-bottom: 3%;
-      padding: 3% 0;
-    }
-
-    #read_more {
-      padding: 3%;
-      width: 75%;
-    }
-
-}
-@media screen and (max-width: 1000px) {
-  #membership li p {
-    display: none;
-   }
   }
-   @media screen and (min-width: 1000px) {
+
+  @media screen and (max-width: 900px) {
+    #membership li p {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 1000px) {
     #membership a {
-  pointer-events: none;
+      pointer-events: none;
+    }
   }
-}
   @media screen and (max-width: 500px) {
     #questions img {
       margin-top: 5%;
@@ -227,9 +296,70 @@ blockquote {
     #buttons {
       margin-bottom: 10%;
     }
-}
+  }
+  @media screen and (min-width: 1200px) {
+    .background-container {
+      background-color: var(--card-background);
+      border-radius: 60px 0 0 0;
+      z-index: 2;
+    }
+    main {
+      padding-left: 3rem;
+    }
+  }
+  @media screen and (min-width: 700px) {
+    main {
+      background-color: transparent;
+    }
+    .background-container-offset {
+      background-color: var(--secondary-background);
+      padding-top: 2rem;
+      border-radius: 60px 0 0 60px;
+      z-index: 1;
+    }
+  }
 
+  #medlem {
+    padding: 1em;
+  }
+
+  #questions {
+    padding: 1em;
+  }
+
+  #aboutus {
+    background-color: var(--tertiary-background);
+    padding: 1em;
+  }
+  #img {
+    width: 100%;
+    height: auto;
+    padding-top: 1em;
+  }
+  @media screen and (min-width: 1200px) {
+    #img {
+      width: 70%;
+      height: auto;
+      padding-top: 1em;
+      margin-left: 15%;
+    }
+    #buttons {
+      margin-bottom: 2em;
+    }
+  }
+
+  .icon {
+    width: 3%;
+  }
+  .q {
+    width: 12%;
+  }
+  .about {
+    max-width: 62ch;
+  }
+  .under_title {
+    display: block;
+    max-width: 40ch;
+  }
 </style>
 <script src="../js/script.js"></script>
-
-

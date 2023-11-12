@@ -3,7 +3,7 @@ import Nav from "./Nav.astro";
 ---
 
 <header id="mainHeader">
-    <div class="logo">
+  <div class="logo">
     <a href="/#" class="nav_logo">
       <img src="icons/logo_small.svg" alt="CA Logo" class="small-logo" />
       <img src="icons/logo_long.svg" alt="CA Logo" class="large-logo" />
@@ -13,42 +13,38 @@ import Nav from "./Nav.astro";
 </header>
 
 <style>
+  .logo {
+    z-index: 5;
+  }
 
-  
-.logo {
-  z-index: 5;
-}
-
-header {
+  header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0;
-}  
-
-.logo img {
-    width: 105px;
-    height: auto;
-}
-
-.small-logo {
-  display: block; 
-}
-
-.large-logo {
-  display: none;
-}
-
-@media (min-width: 700px) {
-  .small-logo {
-    display: none; 
   }
-  .large-logo {
+
+  img {
+    max-width: 50%;
+  }
+  @media screen and (min-width: 900px) {
+    .small-logo {
+      max-width: 30%;
+    }
+  }
+  .small-logo {
     display: block;
   }
-  .logo img {
-    width: 310px;
-    height: auto;
-}
-}
 
+  .large-logo {
+    display: none;
+  }
+
+  @media (min-width: 1200px) {
+    .small-logo {
+      display: none;
+    }
+    .large-logo {
+      display: block;
+    }
+  }
 </style>
