@@ -1,54 +1,228 @@
 <footer>
-  <div class="footer_link1">
-    <a href="/#"><img src="icons/arrow.svg" alt="Arrow Icon" /> Om CA</a>
-    <a href="/#"><img src="icons/arrow.svg" alt="Arrow Icon" /> Kontakt os</a>
-    <a href="/#"><img src="icons/arrow.svg" alt="Arrow Icon" /> Nyhedsbrev</a>
-  </div>
+  <section>
+    <ul id="link1">
+      <a class="link" href="/#"
+        ><img src="icons/arrow.svg" alt="Arrow Icon" class="icon" /> Om CA</a
+      >
+      <a class="link" href="/#"
+        ><img src="icons/arrow.svg" alt="Arrow Icon" class="icon" /> Kontakt os</a
+      >
+      <a class="link" href="/#"
+        ><img src="icons/arrow.svg" alt="Arrow Icon" class="icon" /> Nyhedsbrev</a
+      >
+    </ul>
 
-  <div class="footer_link2">
-    <a href="/#"><img src="icons/arrow.svg" alt="Arrow Icon" /> Cookiepolitik</a
-    >
-    <a href="/#"
-      ><img src="icons/arrow.svg" alt="Arrow Icon" /> Tilgængelighedserklæring</a
-    >
-    <a href="/#"
-      ><img src="icons/arrow.svg" alt="Arrow Icon" /> Persondatapolitik</a
-    >
-  </div>
+    <ul id="link2">
+      <a class="link" href="/#"
+        ><img src="icons/arrow.svg" alt="Arrow Icon" class="icon" />
+         Cookiepolitik</a
+      >
+      <a class="link" href="/#"
+        ><img src="icons/arrow.svg" alt="Arrow Icon" class="icon" />
+         Tilgængelighedserklæring</a
+      >
+      <a class="link" href="/#"
+        ><img src="icons/arrow.svg" alt="Arrow Icon" class="icon" />
+         Persondatapolitik</a
+      >
+    </ul>
 
-  <div class="phone">
-    <p>Telefon hverdage 08:00 – 15:00</p>
-    <span id="phone">3314 9045</span>
-  </div>
+    <div id="phone">
+      <p>Telefon hverdage 08:00 – 15:00</p>
+      <span>3314 9045</span>
+    </div>
+  </section>
+  <ul id="trustlogo">
+    <li>
+      <a href="https://dk.trustpilot.com/review/www.ca.dk" target="_blank"
+        ><img
+          src="icons/trustpilot.svg"
+          alt="Trustpilot"
+          class="trust-link"
+        /></a
+      >
+    </li>
+    <li>
+      <a href="/#"><img src="icons/logo.svg" alt="CA" class="logo-link" /></a>
+    </li>
+  </ul>
+
+  <ul class="socials">
+    <li>
+      <a
+        href="https://www.linkedin.com/company/caakasse/?originalSubdomain=dk"
+        target="_blank"
+        ><img src="icons/linkedin.svg" alt="LinkedIn" class="sicon" /></a
+      >
+    </li>
+    <li>
+      <a
+        class="social-link"
+        href="https://www.facebook.com/Studiepartner"
+        target="_blank"
+        ><img src="icons/facebook.svg" alt="Facebook" class="sicon" /></a
+      >
+    </li>
+    <li>
+      <a
+        class="social-link"
+        href="https://www.instagram.com/caakasse/"
+        target="_blank"
+        ><img src="icons/instagram.svg" alt="Instagram" class="sicon" /></a
+      >
+    </li>
+    <li>
+      <a
+        class="social-link"
+        href="https://www.tiktok.com/@caakasse"
+        target="_blank"
+        ><img src="icons/tiktok.svg" alt="TikTok" class="sicon" /></a
+      >
+    </li>
+  </ul>
 </footer>
-
-<div class="links">
-  <div id="logos">
-    <a href="https://dk.trustpilot.com/review/www.ca.dk" target="_blank"
-      ><img src="icons/trustpilot.svg" alt="Trustpilot" /></a
-    >
-    <a href="/#"><img src="icons/logo_small.svg" alt="CA" /></a>
-  </div>
-
-  <div class="socials">
-    <a
-      href="https://www.linkedin.com/company/caakasse/?originalSubdomain=dk"
-      target="_blank"><img src="icons/linkedin.svg" alt="LinkedIn" /></a
-    >
-    <a href="https://www.facebook.com/Studiepartner" target="_blank"
-      ><img src="icons/facebook.svg" alt="Facebook" /></a
-    >
-    <a href="https://www.instagram.com/caakasse/" target="_blank"
-      ><img src="icons/instagram.svg" alt="Instagram" /></a
-    >
-    <a href="https://www.tiktok.com/@caakasse" target="_blank"
-      ><img src="icons/tiktok.svg" alt="TikTok" /></a
-    >
-  </div>
-</div>
 
 <style>
   * {
+    line-height: 2em;
+  }
+  .icon {
+    width: 2%;
+  }
+  .link {
+    font-size: var(--md-size);
+    display: flex;
+    text-indent: 1rem;
+  }
+  @media screen and (min-width: 2200px) {
+    .link {
+      text-indent: 2rem;
+    }
+    .icon {
+      width: 1.8%;
+    }
+  }
+  #link2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4%;
+    margin-bottom: 10%;
+  }
+  @media screen and (min-width: 950px) {
+    #link2 {
+      margin-top: 0;
+    }
+  }
+  .phone p {
+    font-family: Nexa;
+  }
+
+  #phone {
+    font-size: var(--xlg-size);
+    font-family: Nexa;
+    margin-bottom: 1em;
+  }
+  @media screen and (min-width: 950px) {
+    #phone {
+      margin-left: 1em;
+    }
+  }
+
+  @media screen and (min-width: 950px) {
+    section {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  #trustlogo {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-left: -30px;
+  }
+
+  #trustlogo li {
+    flex: 1;
+    text-align: center;
+  }
+
+  #trustlogo li a {
+    display: block;
+  }
+
+  .logo-link {
+    width: 50%;
+  }
+  .trust-link {
+    width: 55%;
+  }
+  @media screen and (min-width: 768px) {
+    .logo-link {
+      width: 25%;
+    }
+    .trust-link {
+      width: 30%;
+    }
+  }
+
+  @media screen and (min-width: 1600px) {
+    .logo-link {
+      width: 20%;
+    }
+    .trust-link {
+      width: 25%;
+    }
+  }
+
+  .logo-link {
+    margin-top: 0.5rem;
+  }
+
+  .socials {
+    margin-top: 4em;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+  }
+  @media screen and (min-width: 1600px) {
+    .socials {
+      margin-top: 13em;
+    }
+  }
+
+  .socials li {
+    flex: 1;
+    text-align: center;
+  }
+
+  .socials li a {
+    display: block;
+  }
+  .sicon {
+    width: 50%;
+  }
+
+  @media screen and (min-width: 768px) {
+    .sicon {
+      width: 20%;
+    }
+  }
+
+  /* @media screen and (min-width: 1000px) {
+    .sicon {
+      width: 20%;
+    }
+  } */
+  /* .trust-link {
+    width: 40%;
+  }
+  .logo-link {
+    width: 40%;
+  } */
+
+  /* * {
     max-width: 100%;
     margin: 0 auto;
     line-height: 2em;
@@ -135,5 +309,5 @@
       display: grid;
       grid-template-columns: 2fr 1fr;
     }
-  }
+  } */
 </style>

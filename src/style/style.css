@@ -10,7 +10,7 @@
     --card-background: #CDC5B6;
     --border-radius: 0.5rem;
     --xxlg-size: 3rem;
-    --xlg-size: 2.6rem;
+    --xlg-size: 1.4rem;
     --lg-size: 1.4rem;
     --md-size: 1.25rem;
     --sm-size: 1.06rem;
@@ -21,7 +21,7 @@
 @media screen and (max-width: 768px) {
   :root {
     --xxlg-size: 2.5rem;
-    --xlg-size: 1.6rem;
+    --xlg-size: 1.4rem;
     --lg-size: 1.2rem;
     --md-size: 1.1rem;
     --sm-size: 1rem;
@@ -30,17 +30,12 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 768px) {
   :root {
-    --xxlg-size: 2rem;
-    --xlg-size: 1.6rem;
-    --lg-size: 1.3rem;
-    --md-size: 0.9rem;
-    --sm-size: 0.8rem;
-    --xsm-size: 0.7rem;
-    --xxsm-size: 0.6rem;
-  }
-}
+    --xlg-size: 1.8rem;
+  }}
+
+
 
 @media screen and (min-width: 1600px) {
     :root {

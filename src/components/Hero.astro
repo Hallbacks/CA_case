@@ -6,7 +6,7 @@
     </div>
     <button>Bliv medlem</button>
     <h2>
-      Vi hjælper dig, fra dér hvor du er <br /> — Til dér hvor du gerne vil være
+      Vi hjælper dig, fra der hvor du er <br /> — Til der hvor du gerne vil være
     </h2>
   </section>
 </div>
@@ -17,10 +17,11 @@
     height: auto;
     padding-top: 1em;
   }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     img {
-      width: 100%;
+      width: 80%;
       height: auto;
+      padding-top: 3em;
     }
     #img {
       margin-left: 10%;
@@ -28,15 +29,16 @@
   }
 
   button {
-    position: static;
-    margin: 6% 0;
-    margin-top: -10px;
-    margin-left: 30%;
+    position: absolute;
+    margin-bottom: 1em;
+    margin-top: -23px;
+    margin-left: 32%;
   }
 
   h2 {
     margin-bottom: 6%;
-    margin-left: 1.5rem;
+    margin-left: 2.5rem;
+    margin-top: 1em;
   }
 
   @media screen and (min-width: 1200px) {
@@ -62,6 +64,11 @@
       margin-left: -5%;
     }
   }
+  @media screen and (min-width: 1600px) {
+    h1 {
+      left: 10%;
+    }
+  }
   #hero {
     background-color: var(--tertiary-background);
   }
@@ -80,15 +87,22 @@
   @media screen and (min-width: 1200px) {
     button {
       position: absolute;
-      right: 30px;
-      margin-top: -10%;
+      right: 150px;
+      margin-top: -9%;
     }
   }
   @media screen and (min-width: 1600px) {
     button {
       position: absolute;
-      right: 30px;
-      margin-top: -5%;
+      right: 200px;
+      margin-top: -9%;
+    }
+  }
+  @media screen and (min-width: 2200px) {
+    button {
+      position: absolute;
+      right: 500px;
+      margin-top: -9%;
     }
   }
 </style>
