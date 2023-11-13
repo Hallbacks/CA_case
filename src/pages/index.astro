@@ -111,15 +111,17 @@ import Footer from "../components/Footer.astro";
               </li>
               <li>
                 <blockquote>
-                  <p>
-                    <img src="icons/quote.svg" alt="Citat" class="q" />CA var
-                    min studiepartner under studietiden og jeg var ikke et
-                    sekund i tvivl om, at jeg havde valgt den rette a-kasse.
-                  </p>
-                  <div class="majbritt">
-                    <span>– Majbrit, Cand.merc. i</span>
-                    <br />
-                    <span>International i Business & Marketing</span>
+                  <div>
+                    <p>
+                      <img src="icons/quote.svg" alt="Citat" class="q" />CA var
+                      min studiepartner under studietiden og jeg var ikke et
+                      sekund i tvivl om, at jeg havde valgt den rette a-kasse.
+                    </p>
+                    <div class="majbritt">
+                      <span>– Majbrit, Cand.merc. i</span>
+                      <br />
+                      <span>International i Business & Marketing</span>
+                    </div>
                   </div>
                 </blockquote>
               </li>
@@ -178,6 +180,9 @@ import Footer from "../components/Footer.astro";
     padding-top: 5%;
     padding-bottom: 2%;
     max-width: 39ch;
+  }
+  blockquote {
+    display: block;
   }
   .majbritt {
     color: var(--primary-color);
@@ -277,7 +282,8 @@ import Footer from "../components/Footer.astro";
   }
 
   @media screen and (max-width: 900px) {
-    #membership li p {
+    #membership li p,
+    .majbritt {
       display: none;
     }
   }
