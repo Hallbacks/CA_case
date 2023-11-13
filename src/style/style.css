@@ -158,13 +158,11 @@ button:hover {
 }
 
 #img {
-  width: 100%;
-  height: auto;
   padding-top: 1em;
   max-width: 100%; /* Add this line to prevent layout shifts */
 }
 img {
   width: 100%;
-  aspect-ratio: attr(width) / attr(height);
   max-width: 100%; 
+  height: auto;
 }
